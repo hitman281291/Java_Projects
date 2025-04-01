@@ -1,32 +1,40 @@
 package Tasks;
 
-import java.util.Locale;
 import java.util.Scanner;
 
-public class Task011_Palindrome
-{
-    public static void main(String[] args)
-    {
-        System.out.println("Enter a string to check if it's a palindrome");
+public class Task011_Palindrome {
+    //  Array of Char
+
+    public static void main(String[] args) {
+        // madam -> madam, naman -> reveser(naman) ->
 
         Scanner sc = new Scanner(System.in);
-        String word = sc.nextLine();
-
-        int length=word.length();
-        String rev = "";
-
-        for (int i=(length-1);i>=0; --i)
-        {
-            rev = rev + word.charAt(i);
+        System.out.println("Enter the input, I will check Palindrome");
+        String userInput = sc.next();
+        String newString = reverseString(userInput);
+        if (newString.equalsIgnoreCase(userInput)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
 
         }
-        if (word.toLowerCase().equals(rev.toLowerCase()))
-        {
-            System.out.println(word + " is a palindrom string");
-        }
-        else
-        {
-            System.out.println(word + " is not a palindrom string");
-        }
+
+
     }
+
+    private static String reverseString(String userInput) {
+        String reversed = "";
+        for (int i = userInput.length() - 1; i >= 0; i--) {
+            reversed = reversed + userInput.charAt(i);
+        }
+
+        return reversed;
+    }
+
+    private static String reverseStringSB(String userInput) {
+        StringBuilder stringBuilder = new StringBuilder(userInput);
+        return stringBuilder.reverse().toString();
+    }
+
+
 }

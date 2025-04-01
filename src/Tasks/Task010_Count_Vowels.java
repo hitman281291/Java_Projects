@@ -1,41 +1,28 @@
 package Tasks;
 
-import java.util.Scanner;
+public class Task010_Count_Vowels {
+    public static void main(String[] args) {
+        String input = "Java Program to Count Vowels and Consonants";
+        int vowels = 0;
+        int consonants = 0;
 
-public class Task010_Count_Vowels
-{
-    public static void main(String[] args)
-    {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a word whose vowels and consonants are to be counted");
-        String string = scanner.nextLine();
+        input = input.toLowerCase();
+        System.out.println(input);
 
-        String word = string.toLowerCase();
-
-        int wordlength = word.length();
-
-        int vowelcount = 0, consonantcount=0;
-
-        String vowels = "aeiou";
-
-        for (int i=0; i<wordlength ; i++)
-        {
-            char ch = word.charAt(i);
-            if(Character.isLetter(ch))
-            {
-                if (vowels.indexOf(ch) != -1)
-                {
-                    vowelcount++;
-                }
-                else
-                {
-                    consonantcount++;
-                }
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                vowels++;
+            } else {
+                consonants++;
             }
+
+
         }
 
-        System.out.println("Number of vowels :"+vowelcount);
-        System.out.println("Number of consonants :"+consonantcount);
+        System.out.println("Number of vowels: " + vowels);
+        System.out.println("Number of consonants: " + consonants);
+
 
     }
 }

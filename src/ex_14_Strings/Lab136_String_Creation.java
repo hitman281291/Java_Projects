@@ -1,14 +1,17 @@
 package ex_14_Strings;
 
-public class Lab136_String_Creation
-{
-    public static void main(String[] args)
-    {
-        String s1 = "hitesh";
+public class Lab136_String_Creation {
+    public static void main(String[] args) {
 
-        String s2 = new String("hitesh");
+        // String 2 ways
+        String s1 = "pramod"; // SCP
 
-        System.out.println(s1);
-        System.out.println(s2);
+        String s2 = new String("pramod"); // OA -> Object Area
+
+
+
+
+
+
     }
 }

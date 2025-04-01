@@ -1,7 +1,6 @@
 package ex_02_Java_Basics_part2;
 
-public class Lab015_Variables
-{
+public class Lab015_Variables {
     public static void main(String[] args) {
         // ```
         //data_type variable_name =  variable_value
@@ -20,5 +19,8 @@ public class Lab015_Variables
         // 10 -> literal -> integer value
 
 
+
     }
+
+
 }

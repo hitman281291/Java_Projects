@@ -1,9 +1,7 @@
 package ex_14_Strings;
 
-public class Lab138_Strings_Functions
-{
-    public static void main(String[] args)
-    {
+public class Lab138_Strings_Functions {
+    public static void main(String[] args) {
         char c = 'A';
         System.out.println(c);
 

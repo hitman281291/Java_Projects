@@ -1,6 +1,4 @@
 package ex_01_Java_Basic;
 
-public class LabAI03
-{
-
+public class LabAI03 {
 }

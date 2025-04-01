@@ -1,7 +1,6 @@
 package ex_03_Literals;
 
-public class Lab034_Char_Literal
-{
+public class Lab034_Char_Literal {
     public static void main(String[] args) {
 
         char c1 = 'A'; // A to Z, a-z, !@#$%^&*()_+
@@ -39,6 +38,8 @@ public class Lab034_Char_Literal
         System.out.println(my_laugh_smily);
 
         char c11  = '\u1F60';
+
+
 
     }
 }

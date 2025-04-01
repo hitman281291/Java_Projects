@@ -1,7 +1,6 @@
 package ex_02_Java_Basics_part2;
 
-public class Lab020_Interview_QnA2
-{
+public class Lab020_Interview_QnA2 {
     public static void main(String[] args) {
         //int enum = 10;
         int Enum = 10;
