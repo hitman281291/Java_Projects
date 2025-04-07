@@ -1,4 +1,4 @@
-package Tasks.AdditionalPrograms;
+package Tasks.AdditionalPrograms_series1;
 
 import java.util.Scanner;
 
